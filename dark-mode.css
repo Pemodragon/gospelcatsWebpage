@@ -1,3 +1,95 @@
+/* Base Styles (Desktop - Keep Existing) */
+
+/* Mobile-Friendly Styles */
+@media (max-width: 768px) {
+    /* Adjust header layout for mobile */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    /* Container width for smaller screens */
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    /* Info sections stack vertically on mobile */
+    .info-section {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .info-section:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;   /* Full width on mobile */
+        margin: 10px 0;
+    }
+
+    .image-box img {
+        width: 100%;    /* Ensure images are responsive */
+        height: auto;
+    }
+
+    .info-section .text {
+        padding: 10px 0;
+    }
+
+    /* Reduce padding for the footer */
+    .footer {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    /* Hero Section Adjustments */
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .hero-text::before {
+        width: 90%;
+        height: 90%;
+    }
+
+    /* Contact Info - Better spacing for mobile */
+    .info-contact {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    /* Reduce spacing in profile cards */
+    .profile-card {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .profile-card img {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+}
+
+
 body {
     background-color: #121212;
     color: #ffffff;
