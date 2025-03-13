@@ -128,7 +128,7 @@ img {
     position: relative;
     width: 100%;
     height: calc(100vh - 80px); /* Adjust 80px based on the height of your header and footer */
-    background-image: url('img/jpg.png'); /* Replace with the image path */
+    background-image: url('img/jpg.jpg'); /* Replace with the image path */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Keeps the image centered */
     display: flex;
