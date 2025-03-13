@@ -1,0 +1,162 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: #1e1e1e;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-card img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.profile-card p {
+    flex: 1;
+}
+
+/* Flexbox layout for alternating text and image positions */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* For alternating sides on even sections */
+.info-section:nth-child(even) {
+    flex-direction: row-reverse; /* This makes the image appear on the right */
+}
+
+.info-section img {
+    margin: 0 20px; /* Add margin around the image */
+}
+
+.info-section .text {
+    flex: 1; /* Ensures text takes up the remaining space */
+}
+
+.info-section h2 {
+    color: #f1c40f;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+
+.info-contact {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+/* Style for the image box */
+.image-box {
+    width: 200px;   /* Fixed size for images */
+    height: auto;   /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    margin: 10px;
+}
+
+.image-box img {
+    width: 100%;    /* Make sure image fills the box */
+    height: auto;
+}
+/* Hero Section Styling */
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px); /* Adjust 80px based on the height of your header and footer */
+    background-image: url('img/duo.png'); /* Replace with the image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Keeps the image centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text Styling */
+.hero-text {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;  /* Adjust size as needed */
+    font-family: Arial, sans-serif;
+    z-index: 2;
+}
+
+/* Blurred Oval Background */
+.hero-text::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Dark background with opacity */
+    border-radius: 50%;  /* Oval shape */
+    filter: blur(10px);  /* Blurring effect */
+    z-index: 1;
+}
